@@ -1,0 +1,14 @@
+startup_message off
+                                                     
+# Gray status bar with time on the right
+caption always "%{= wk} %-w%{= bW}[%n %t]%{-}%+w %= [%c] "
+vbell off
+term screen-256color
+screen -t bash0 0
+screen -t bash1 1
+screen -t bash2 2
+select 0
+#altscreen on
+
+#bindkey "^[[1;5D" prev  # change window with ctrl-left
+#bindkey "^[[1;5C" next  # change window with ctrl-right
